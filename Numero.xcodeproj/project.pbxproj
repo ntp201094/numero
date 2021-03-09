@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021900B825F7313400F78074 /* ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021900B725F7313400F78074 /* ConverterTests.swift */; };
 		18B65CBC20C09E8D00BFC903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B65CBB20C09E8D00BFC903 /* LaunchScreen.storyboard */; };
 		3052E856201040F500F6F30B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052E855201040F500F6F30B /* AppDelegate.swift */; };
 		3052E858201040F500F6F30B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3052E857201040F500F6F30B /* ViewController.swift */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021900B625F7313400F78074 /* NumeroTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NumeroTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		021900B725F7313400F78074 /* ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterTests.swift; sourceTree = "<group>"; };
 		18B65CBB20C09E8D00BFC903 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3052E852201040F500F6F30B /* Numero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3052E855201040F500F6F30B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				3052E86C201040F500F6F30B /* Info.plist */,
+				021900B725F7313400F78074 /* ConverterTests.swift */,
+				021900B625F7313400F78074 /* NumeroTests-Bridging-Header.h */,
 			);
 			path = NumeroTests;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 					};
 					3052E865201040F500F6F30B = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3052E851201040F500F6F30B;
 					};
@@ -221,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021900B825F7313400F78074 /* ConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +403,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -404,6 +412,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.NumeroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NumeroTests/NumeroTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numero.app/Numero";
@@ -415,6 +425,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -423,6 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.NumeroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NumeroTests/NumeroTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numero.app/Numero";
