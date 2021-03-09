@@ -23,7 +23,7 @@ class ConverterTests: XCTestCase {
     
     func testConversionForOne() {
         let result = self.converter.convert(1)
-        XCTAssertEqual(result, "", "Conversion for 1 is incorrect")
+        XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
     }
 
 }
